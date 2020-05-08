@@ -1,0 +1,124 @@
+1: DOCTYPE written in html5
+2: root element of html page, open
+3: meta information, open(<head>)
+4: points to an external javascript file
+5: refresh button on wepage
+6: meta information, close(</head>)
+7: visable page element, open(<body>)
+
+9: Web page header title
+
+11: textarea, multi-line text input control, with defined size
+
+
+
+
+
+
+
+
+
+21: closed textarea
+23: play button that executes music box
+
+24: script section open
+25: document object created from play button line 17, using addEventListener and getElementById methods.
+
+27: Function myFunction() created, used to start program once play it hit.
+28: takes values stored from html text area box
+29: note assignment, int value 0=no assign, 1=assign, 2=reassign
+
+31: notes_parsed array created
+32: first for loop to traverse rows
+33: if statement to check if value == 'A'
+34: Check is var a note assignment is 1
+35: if true push A to notes_parsed
+36: Check is var a note assignment is 2
+37: if true push a to notes_parsed
+
+39: else error handle push Z to notes_parsed
+
+41: if statement to check if value == 'B'
+42: Check is var b note assignment is 1
+43: if true push B to notes_parsed
+44: Check is var b note assignment is 2
+45: if true push b to notes_parsed
+
+47: else error handle push Z to notes_parsed
+
+49: if statement to check if value == 'C'
+50: Check is var c note assignment is 1
+51: if true push C to notes_parsed
+52: Check is var c note assignment is 2
+53: if true push c to notes_parsed
+
+55: else error handle push Z to notes_parsed
+
+57: if statement to check if value == 'D'
+58: Check is var d note assignment is 1
+59: if true push D to notes_parsed
+60: Check is var d note assignment is 2
+61: if true push d to notes_parsed
+
+63: else error handle push Z to notes_parsed
+
+65: if statement to check string "A=a.mp3"
+66: if true set variable a to 1
+
+68: if statement to check string "B=b.mp3"
+69: if true set variable b to 1
+
+71: if statement to check string "C=c.mp3"
+72: if true set variable c to 1
+
+74: if statement to check string "D=d.mp3"
+75: if true set variable d to 1
+
+77: if statement to check string "A=aa.mp3"
+78: if true set variable a to 2
+
+80: if statement to check string "B=bb.mp3"
+81: if true set variable b to 2
+
+83: if statement to check string "C=cc.mp3"
+84: if true set variable c to 2
+
+86: if statement to check string "D=dd.mp3"
+87: if true set variable d to 2
+
+
+
+91: index_ms_offset set to 1000ms
+92: for loop to go through the entire length of notes_parsed
+
+94: if statement notes_parsed[x] == 'A'
+
+96: setTimeout after executing function (play a.mp3, delay by index_ms_offset * index)
+97: if statement notes_parsed[x] == 'B' 
+
+99: setTimeout after executing function (play b.mp3, delay by index_ms_offset * index)
+100: if statement notes_parsed[x] == 'C' 
+
+102: setTimeout after executing function (play c.mp3, delay by index_ms_offset * index)
+103: if statement notes_parsed[x] == 'D' 
+
+105: setTimeout after executing function (play d.mp3, delay by index_ms_offset * index)
+106: if statement notes_parsed[x] == 'a' 
+
+109: setTimeout after executing function (play aa.mp3, delay by index_ms_offset * index)
+110: if statement notes_parsed[x] == 'b' 
+
+
+112: setTimeout after executing function (play bb.mp3, delay by index_ms_offset * index)
+113: if statement notes_parsed[x] == 'c' 
+
+
+115: setTimeout after executing function (play cc.mp3, delay by index_ms_offset * index)
+116: if statement notes_parsed[x] == 'd' 
+
+
+118: setTimeout after executing function (play dd.mp3, delay by index_ms_offset * index)
+
+120: if statement notes_parsed[x] == 'Z' 
+
+122: setTimeout after executing function (play error.mp3, delay by index_ms_offset * index)
